@@ -45,6 +45,6 @@ Once you have tabulated the scores, create a pop up which opens up on clicking a
 
 ## Expected Output
 Here is a screenshot of the expected output.
-![Image description]
+![Image description](https://github.com/prasanthsteamA/images/blob/main/output%202%201.png)
 
 Happy Coding ❤️
