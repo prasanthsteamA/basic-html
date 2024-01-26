@@ -39,6 +39,10 @@ table{
 	border-collapse: collapse;
 }
 
+tr {
+    border-bottom: 1.5px solid rgba(215, 212, 212, 0.616);
+}
+
 .table_heading td{
 	font-weight: 600;
 	color: white;
