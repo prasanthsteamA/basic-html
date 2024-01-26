@@ -2,15 +2,145 @@
 
 
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
+nav{
+	display:flex;
+}
+
+.logo{
+	margin-left: auto;
+	padding-top: 1em;
+	padding-right: 4em;
+	padding-bottom: 1em;
+}
+
+body {
+	background-image: url("assets/background-image1.png");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: right bottom;
+	font-family: Nunito sans;
+}
+
+p{
+	font-weight: bolder;
+}
+
+.scoreboard{
+	padding-left:40 px;
+}
+
+.icc {
+	font-weight: bolder;
+	text-shadow: 0px 2px 2px rgb(95, 64, 64);
+}
+
+.ind-vs-sl {
+	color:dimgrey;
+}
+
+table{
+	width: 75%;
+	height:60%;
+	background-color: white;
+}
+
+
+td {
+	width: max-content;
+	border-bottom:1px solid dimgray;
+	font-weight:bolder;
+}
+
+th,td{
+	padding: 15px;
+}
+
+th{
+	color: white;
+}
+
+.strike-rate {
+	text-align: end;
+}
+
+.name,.dismissal {
+	text-align: start;
+}
+
+.india-innings {
+	text-align: start;
+}
+
+.table-header {
+	background-color:#f05136 ;
+}
+
+.dismissal{
+	color:dimgrey;
+	font-weight: 500;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+footer{
+    text-align: end;
 	position: relative;
-	top: 750px;
-	margin-left: 80px;
+	top: 2em;
 	font-size: 18px;
 	font-family: Nunito Sans;
-    font-style: normal;
-    
+	color:white;
+	height:2em;	
+	padding: 1em;
+}
+
+.popup {
+	position:relative;
+	display:inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
+	color:#467ee5;
+}
+
+.popup .popuptext {
+	visibility: hidden;
+	width:100px;
+	color:#fff;
+	text-align: center;
+	border-radius: 0px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	top:100%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.popup .popuptext::after {
+	content:"";
+	position: absolute;
+	bottom: 100%;
+	top: 100%;
+	left:50%;
+	margin-left: -5px;
+}
+
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity: 1;}
 }

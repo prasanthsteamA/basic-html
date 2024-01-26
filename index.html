@@ -3,11 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ScoreBoard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito Sans" rel="stylesheet">
 </head>
 <body>
+    <script src="pop.js"></script>
     <!-- Type your code here -->
-    <footer class="footer">Made with <img src="/assets/heart.svg"> by SteamA</footer>
+    <nav>
+        <img src="assets/Logo.JPG" class="logo">
+    </nav>
+    <div class="scoreboard">
+        <h1 class="icc">ICC WORLD CUP 2011</h1>
+        <p class="ind-vs-sl">India Vs SriLanka ScoreCard</p>
+            
+        
+
+        <table>
+            <tr class="table-header">
+                <th colspan="5"  class="india-innings">India Innings</td>
+                <th colspan="2">277-4 (48.2)</th>
+            </tr>
+            <tr>
+                <td class="name">Batsman</td>
+                <td></td>
+                <td>R</td>
+                <td>B</td>
+                <td>4s</td>
+                <td>6s</td>
+                <td class="strike-rate">SR</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('virender_sehwag')">
+                        Virender Sehwag
+                        <span class="popuptext" id="virender_sehwag">
+                            <img src="assets/Player6.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">lbw b L Malinga</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="strike-rate">0.0</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('sachin_tendulkar')">
+                        Sachin Tendulkar
+                        <span class="popuptext" id="sachin_tendulkar">
+                            <img src="assets/Player5.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">c k Sangakkara b L Malinga</td>
+                <td>18</td>
+                <td>14</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="strike-rate">128.57</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('gautham_gambhir')">
+                        Gautham Gambhir
+                        <span class="popuptext" id="gautham_gambhir">
+                            <img src="assets/Player4.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">b T Perera</td>
+                <td>97</td>
+                <td>122</td>
+                <td>9</td>
+                <td>0</td>
+                <td class="strike-rate">79.51</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('virat_kohli')">
+                        Virat Kohli
+                        <span class="popuptext" id="virat_kohli">
+                            <img src="assets/Player3.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">c & b T Dilshan</td>
+                <td>35</td>
+                <td>49</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="strike-rate">71.43</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('ms_dhoni')">
+                        MS Dhoni
+                        <span class="popuptext" id="ms_dhoni">
+                            <img src="assets/Player2.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">not out</td>
+                <td>91</td>
+                <td>79</td>
+                <td>8</td>
+                <td>2</td>
+                <td class="strike-rate">115.19</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="popup" onclick="myFunction('yuvraj_singh')">
+                        Yuvraj Singh
+                        <span class="popuptext" id="yuvraj_singh">
+                            <img src="assets/Player1.png">
+                        </span>
+                    </div>
+                </td>
+                <td class="dismissal">not out</td>
+                <td>21</td>
+                <td>24</td>
+                <td>2</td>
+                <td>0</td>
+                <td class="strike-rate">87.50</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="name">Extras</td>
+                <td
+                    colspan="5" class="dismissal">15 (b 1,lb 6,w 8,nb 0,p 0)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="name">Total</td>
+                <td colspan="5" class="dismissal">277 (4 wkts, 48.2 Ov)</td>
+
+            </tr>
+            <tr>
+                <td class="name">Did not bat</td>
+                <td colspan="6" class="dismissal">
+                    <div class="popup" onclick="myFunction('suresh_raina')">
+                        Suresh Raina
+                        <span class="popuptext" id="suresh_raina">
+                            <img src="assets/Player1-1.jpg">
+                        </span>
+                    </div>
+                    <div class="popup" onclick="myFunction('harbhajan_singh')">
+                        Harbhajan Singh
+                        <span class="popuptext" id="harbhajan_singh">
+                            <img src="assets/Player1-2.jpg">
+                        </span>
+                    </div>
+                    <div class="popup" onclick="myFunction('zaheer_khan')">
+                        Zaheer Khan
+                        <span class="popuptext" id="zaheer_khan">
+                            <img src="assets/Player1-3.jpg">
+                        </span>
+                    </div>
+                    <div class="popup" onclick="myFunction('munaf_patel')">
+                        Munaf Patel
+                        <span class="popuptext" id="munaf_patel">
+                            <img src="assets/Player1-4.jpg">
+                        </span>
+                    </div>
+                    <div class="popup" onclick="myFunction('s_sreesanth')">
+                        S Sreesanth
+                        <span class="popuptext" id="s_sreesanth">
+                            <img src="assets/Player1-5.jpg">
+                        </span>
+                    </div>
+                </td>                
+            </tr>
+        </table>
+    </div>
+    <footer>Made with <img src="assets/heart.svg"> by SteamA</footer>
 </body>
 </html>
