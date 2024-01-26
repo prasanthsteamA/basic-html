@@ -1,16 +1,80 @@
 /* Type your code here */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+  background-image: url("assets/background-image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 20px 40px 20px 40px;
+  font-family: "Nunito Sans";
+}
+
+a{
+	text-decoration: none;
+	font-weight:400 ;
+}
+
+.cric_logo {
+  display: flex;
+  flex-direction: row-reverse;
+  background: fixed;
+}
+
+.heading h1 {
+  font-size: 40px;
+  text-shadow: 0px 4px 4px rgba(82, 82, 82, 0.605);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.heading p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(81, 81, 81);
+  margin-top: 0px;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.table_heading td{
+	font-weight: 600;
+	color: white;
+	background-color: rgb(255, 60, 0);
+	padding: 10px 30px;
+}
+
+.column_heading td{
+	font-weight: 600;
+	color: black;
+	background-color: white;
+	padding: 10px 30px;
+}
+
+.bowler{
+	color: rgb(122, 122, 122) !important;
+	font-weight: 300  !important;
+}
+
+.batsman_row td{
+	color: black;
+	background-color: white;
+	font-weight: 400;
+	padding: 10px 30px;
+}
 
 
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  position: relative;
+  top: 750px;
+  margin-left: 80px;
+  font-size: 18px;
+  font-family: "Nunito Sans";
+  font-style: normal;
 }
