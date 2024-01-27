@@ -1,5 +1,12 @@
 /* Type your code here */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+:root {
+  --text-color-grey: #7a7a7a;
+  --text-padding: 10px 30px;
+  --table-heading-color: #ff3c00;
+  --table-column-color: #515151;
+  --text-shadow-color: #3434349a;
+}
 
 body {
   background-image: url("assets/background-image1.png");
@@ -10,9 +17,9 @@ body {
   font-family: "Nunito Sans";
 }
 
-a{
-	text-decoration: none;
-	font-weight:400 ;
+a {
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .cric_logo {
@@ -23,7 +30,7 @@ a{
 
 .heading h1 {
   font-size: 40px;
-  text-shadow: 0px 4px 4px rgba(82, 82, 82, 0.605);
+  text-shadow: 0px 4px 4px var(--text-shadow-color);
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -31,44 +38,48 @@ a{
 .heading p {
   font-size: 20px;
   font-weight: 600;
-  color: rgb(81, 81, 81);
+  color: var(--table-column-color);
   margin-top: 0px;
 }
 
-table{
-	border-collapse: collapse;
+table {
+  border-collapse: collapse;
 }
 
 tr {
-    border-bottom: 1.5px solid rgba(215, 212, 212, 0.616);
+  border-bottom: 1.5px solid #d7d4d49d;
 }
 
-.table_heading td{
-	font-weight: 600;
-	color: white;
-	background-color: rgb(255, 60, 0);
-	padding: 10px 30px;
+.table_heading td {
+  font-weight: 600;
+  color: white;
+  background-color: var(--table-heading-color);
+  padding: var(--text-padding);
 }
 
-.column_heading td{
-	font-weight: 600;
-	color: black;
-	background-color: white;
-	padding: 10px 30px;
+.column_heading td {
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  padding: var(--text-padding);
 }
 
-.bowler{
-	color: rgb(122, 122, 122) !important;
-	font-weight: 300  !important;
+.batsman_row td {
+  color: black;
+  background-color: white;
+  font-weight: 400;
+  padding: var(--text-padding);
 }
 
-.batsman_row td{
-	color: black;
-	background-color: white;
-	font-weight: 400;
-	padding: 10px 30px;
+.batsman_row .bowler {
+  color: var(--text-color-grey);
+  font-weight: 300;
 }
 
+#bowler {
+  color: var(--text-color-grey);
+  font-weight: 300;
+}
 
 /* change the font family and spacing as per your project font */
 .footer {
